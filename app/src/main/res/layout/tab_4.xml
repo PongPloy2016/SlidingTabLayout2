@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#a3eafe"
+    tools:context="com.example.pongwiiapp.slidingtablayout.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="กรุณาเลือกประเภท"
+
+                    android:textSize="20dp"/>
+
+
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:id="@+id/edit_text_code_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions"
+                android:hint=" รหัสสินค้า :"
+                android:layout_gravity="center"
+                android:text="" />
+
+
+            <EditText
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:id="@+id/url_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions"
+                android:hint=" ชื่อสินค้า  :"
+                android:layout_gravity="center"
+                android:text="" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:background="#ffffff"
+                    android:layout_margin="10dp"
+                    android:id="@+id/url_deteal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    android:hint="รายละเอียด :"
+
+                    android:text="" />
+
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation= "horizontal"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/serach_qrcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="เพิ่ม "
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ListView
+
+        android:background="#ffffff"
+        android:id="@+id/product_add_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.76" />
+
+
+
+</LinearLayout>

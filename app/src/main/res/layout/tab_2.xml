@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#a3eafe"
+    tools:context="com.example.pongwiiapp.slidingtablayout.MainActivity">
+
+
+    <SearchView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/search"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="กรุณาเลือกประเภท"
+
+                    android:textSize="20dp"/>
+
+
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                />
+
+                </LinearLayout>
+
+
+            <EditText
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:id="@+id/url_edit_text_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions"
+                android:hint=" รหัสการยืม :"
+                android:layout_gravity="center"
+                android:text="" />
+
+
+            <EditText
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:id="@+id/url_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions"
+                android:hint=" ชื่อผู้ยืม  :"
+                android:layout_gravity="center"
+                android:text="" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:background="#ffffff"
+                android:layout_margin="10dp"
+                android:id="@+id/url_edit_text_sell"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions"
+                android:hint="วันที่ยืม :"
+
+                android:text="" />
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="จำนวน"
+
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    />
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation= "horizontal"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content">
+
+
+
+
+            <Button
+                android:id="@+id/delete_qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="   ลบ qrcode ทั้งหมด  "
+                android:layout_gravity="center" />
+
+
+                <Button
+                    android:id="@+id/serach_qrcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" ค้นหา  "
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ListView
+
+        android:background="#ffffff"
+        android:id="@+id/qr_code_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.76" />
+
+
+
+</LinearLayout>
